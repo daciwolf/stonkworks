@@ -1,7 +1,7 @@
 # save as test_camera.py
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1, cv2.CAP_V4L2)
 if not cap.isOpened():
     print("Camera not found")
     exit()
